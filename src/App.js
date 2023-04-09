@@ -1,5 +1,5 @@
-
-import './App.css';
+import React, { Component } from 'react';
+//import './App.css';
 
 // function MoreInf() {
 //   return(
@@ -31,16 +31,15 @@ import {
 import Navigation from './Navigation';
 import App2 from './App2';
 
-
-class App extends Comment {
+class App extends Component {
   render() {
     return (
       <Router>
         <div className="App">
           <Navigation />
           <Switch>
-            <Route path="/">
-              <App2/>
+            <Route path="/App2">
+              <App2 />
             </Route>
           </Switch>
         </div>
