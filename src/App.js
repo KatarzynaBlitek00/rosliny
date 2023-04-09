@@ -1,10 +1,10 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 
 
 function MoreInf() {
   return (
-    <button>
+    <button id='MoreInf'>
       Więcej
     </button>
   )
