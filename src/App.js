@@ -1,50 +1,52 @@
-//import logo from './logo.svg';
+
 import './App.css';
 
+// function MoreInf() {
+//   return(
+//     <button id='moreInf'>
+//       Więcej
+//     </button>
+//   );
+// }
+// //PAGE 1
+// function App() {
+//   return (
+//     <div className='App'>
+//       <header className='App-header'> 
+//       <p id='writingStart'>
+//           Przegląd najpopularniejszych roślin doniczkowych
+//       </p>
+//       <div>
+//         <MoreInf/>
+//       </div>
+//     </header>
+//   </div>
+//   );
+// }
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import Navigation from './Navigation';
+import App2 from './App2';
 
 
-function MoreInf() {
-  return(
-    <button id='moreInf'>
-      Więcej
-    </button>
-  );
-}
-
-
-function App() {
-  return (
-    <div className='App'>
-      <header className='App-header'> 
-      <p id='writingStart'>
-          Przegląd najpopularniejszych roślin doniczkowych
-      </p>
-      <div>
-        <MoreInf/>
-      </div>
-    </header>
-  </div>
-
-
-
-
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and sahhhhve to reload.
-    //     </p> 
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-  );
+class App extends Comment {
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <Navigation />
+          <Switch>
+            <Route path="/">
+              <App2/>
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    );
+  }
 }
 
 
