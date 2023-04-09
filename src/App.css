@@ -9,11 +9,23 @@
   pointer-events: none;
 }  */
 
+/* 
+
+.newApp {
+  background-color: blanchedalmond;
+  text-align: center;
+  background-size: cover; /*całe tło
+}*/
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+
+
 
 #moreInf {
   width: 120px;

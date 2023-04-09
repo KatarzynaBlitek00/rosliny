@@ -2,14 +2,14 @@
 import './App.css';
 
 
+
 function MoreInf() {
-  return (
+  return(
     <button id='moreInf'>
       Więcej
     </button>
-  )
+  );
 }
-
 
 
 function App() {
@@ -46,5 +46,6 @@ function App() {
     // </div>
   );
 }
+
 
 export default App;
