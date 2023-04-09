@@ -4,7 +4,7 @@ import './App.css';
 
 function MoreInf() {
   return (
-    <button id='MoreInf'>
+    <button id='moreInf'>
       Więcej
     </button>
   )
@@ -15,16 +15,15 @@ function MoreInf() {
 function App() {
   return (
     <div className='App'>
-      <header className='App-header'>
-        <div>
-          <MoreInf/>
-        </div>
-
-        <p>
+      <header className='App-header'> 
+      <p id='writingStart'>
           Przegląd najpopularniejszych roślin doniczkowych
-        </p>
-      </header>
-    </div>
+      </p>
+      <div>
+        <MoreInf/>
+      </div>
+    </header>
+  </div>
 
 
 

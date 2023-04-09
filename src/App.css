@@ -15,9 +15,17 @@
   }
 }
 
+#moreInf {
+  width: 120px;
+  height: 60px;
+  font-style: oblique;
+}
 
 
-
+#writingStart {
+  color: black;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
 .App-header {
   /* background-color: #dcaae3; */
