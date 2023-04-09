@@ -1,28 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+function MoreInf() {
+  return (
+    <button>
+      Więcej
+    </button>
+  )
+}
+
+
+
 function App() {
   return (
-
-
-
-
-
-
     <div className='App'>
       <header className='App-header'>
         <div>
-          jdjdjK
+          <MoreInf/>
         </div>
 
         <p>
-          sssssFssss
+          Przegląd najpopularniejszych roślin doniczkowych
         </p>
       </header>
-      <div>
-        <p>ddddd</p>
-      </div>
-
     </div>
 
 
