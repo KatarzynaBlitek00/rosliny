@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-//import styled from 'styled-components';
+import styled from 'styled-components';
 
 
-
-// export const PageHeading = styled.h1`
-// `;
 
 
 // function MoreInf() {
@@ -36,7 +33,7 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
-} from "react-router-dom";
+} from 'react-router-dom';
 import Navigation from './Navigation';
 import Home from './Home';
 import Card1 from './Card1';
@@ -47,7 +44,7 @@ class App extends Component {
         return (
         <Router>
             <div className='AppNavigation'>
-                <Navigation/>
+                <Navigation />
                 <Routes>
                     <Route path='/' element={<Home/>}/>
                 </Routes>
