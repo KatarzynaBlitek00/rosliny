@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 import {Link} from 'react-router-dom';
-
-
-
 
 export default function Navigation() {
     return (
         <ul>
             <li>
-                <Link to="/App2">App2</Link>
+                <Link to="/">Home</Link>
+            </li>
+            <li>
+                <Link to="/about">About</Link>
             </li>
         </ul>
     );

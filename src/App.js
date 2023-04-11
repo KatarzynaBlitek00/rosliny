@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import './App.css';
+import './App.css';
 
 // function MoreInf() {
 //   return(
@@ -23,30 +23,39 @@ import React, { Component } from 'react';
 //   </div>
 //   );
 // }
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+// } from 'react-router-dom';
+// import Navigation from './Navigation';
+// import App2 from './App2';
+
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from 'react-router-dom';
+    BrowserRouter as Router,
+    Routes,
+    Route,
+} from "react-router-dom";
 import Navigation from './Navigation';
-import App2 from './App2';
+import Home from './Home';
+import About from './About';
+
 
 class App extends Component {
-  render() {
-    return (
-      <Router>
-        <div className="App">
-          <Navigation />
-          <Switch>
-            <Route path="/App2">
-              <App2 />
-            </Route>
-          </Switch>
-        </div>
-      </Router>
-    );
-  }
+    render() {
+        return (
+        <Router>
+            <div className='App'>
+                <Navigation/>
+                <Routes>
+                    <Route path='/' element={<Home/>}/>
+                </Routes>
+            </div>
+        </Router>
+        );
+    }
 }
+
 
 
 export default App;
