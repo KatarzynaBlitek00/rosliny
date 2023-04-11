@@ -8,7 +8,7 @@ export default function Navigation() {
                 <Link to="/">Home</Link>
             </li>
             <li>
-                <Link to="/card1">Card1</Link>
+                <Link to="/Card1">Card1</Link>
             </li>
         </ul>
     );
