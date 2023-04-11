@@ -1,9 +1,8 @@
 import React from 'react';
 
-export default function About() {
+export default function Card1() {
     return (
         <div>
-            About text
         </div>
     );
 }

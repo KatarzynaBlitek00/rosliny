@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
+//import styled from 'styled-components';
+
+
+
+// export const PageHeading = styled.h1`
+// `;
+
 
 // function MoreInf() {
 //   return(
@@ -23,13 +30,7 @@ import './App.css';
 //   </div>
 //   );
 // }
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-// } from 'react-router-dom';
-// import Navigation from './Navigation';
-// import App2 from './App2';
+
 
 import {
     BrowserRouter as Router,
@@ -38,17 +39,20 @@ import {
 } from "react-router-dom";
 import Navigation from './Navigation';
 import Home from './Home';
-import About from './About';
+import Card1 from './Card1';
 
 
 class App extends Component {
     render() {
         return (
         <Router>
-            <div className='App'>
+            <div className='AppNavigation'>
                 <Navigation/>
                 <Routes>
                     <Route path='/' element={<Home/>}/>
+                </Routes>
+                <Routes>
+                    <Route path='/' element={<Card1/>}/>
                 </Routes>
             </div>
         </Router>
