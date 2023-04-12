@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import styled from 'styled-components';
+import {Heading} from './Heading';
 
-
-
-
+//import styled from 'styled-components';
 // function MoreInf() {
 //   return(
 //     <button id='moreInf'>
@@ -28,7 +26,6 @@ import styled from 'styled-components';
 //   );
 // }
 
-
 import {
     BrowserRouter as Router,
     Routes,
@@ -38,25 +35,30 @@ import Navigation from './Navigation';
 import Home from './Home';
 import Card1 from './Card1';
 
-
 class App extends Component {
     render() {
         return (
-        <Router>
-            <div className='AppNavigation'>
-                <Navigation />
-                <Routes>
-                    <Route path='/' element={<Home/>}/>
-                </Routes>
-                <Routes>
-                    <Route path='/' element={<Card1/>}/>
-                </Routes>
+            <div className='App'>
+                <Router>
+                    <Heading title ="Przegląd najpopularniejszych roślin doniczkowych"/>
+                        <div className='AppNavigation'>
+                        <Navigation />
+                        <Routes>
+                            <Route path='/'element={<Home/>}/>
+                        </Routes>
+                        <Routes>
+                            <Route path='/'element={<Card1/>}/>
+                        </Routes>
+                        </div>
+                        <div>
+                            <p>
+                                ssssss
+                            </p>
+                        </div> 
+                </Router>
             </div>
-        </Router>
         );
     }
 }
-
-
 
 export default App;

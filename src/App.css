@@ -1,15 +1,36 @@
-/* .App {
-  background: url('https://i.pinimg.com/originals/b2/14/f0/b214f0adb5dcbb1c3b358d6c7b67cf9a.gif');
-  /* text-align: center; */
-  /* background-size: cover; całe tło */
-/*  */
-/* .App-logo {
+
+
+  /* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }  */
 
-.AppNavigation {
-  background-color:blue;
+
+/* 
+.App {
+  background-color:hotpink;
+} */
+
+
+.page-heading {
+  /* background-color: brown; */
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(30px + 2vmin);
+}
+
+/* .AppNavigation {
+  align-items: center;
+
+} */
+
+
+.Card1 {
+  background-color: blue;
+
 }
 
 
