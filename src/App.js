@@ -44,10 +44,10 @@ class App extends Component {
                         <div className='AppNavigation'>
                         <Navigation />
                         <Routes>
-                            <Route path='/'element={<Home/>}/>
-                        </Routes>
-                        <Routes>
-                            <Route path='/'element={<Card1/>}/>
+                            <Route path='/'element={<Home/>} />
+                        {/* </Routes>
+                        <Routes> */}
+                            <Route path='/Card1'element={<Card1/>} />
                         </Routes>
                         </div>
                         <div>

@@ -11,7 +11,7 @@ export default function Card1() {
                 
             </div>
             <div className='About1'>
-                CCCCCCC
+                
             </div>
             <div className='Needs1'>
                 CCCC
